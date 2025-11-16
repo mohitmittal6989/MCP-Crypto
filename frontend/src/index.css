@@ -1,0 +1,106 @@
+ :root{
+  --bg:#071021;
+  --card:#0f1720;
+  --accent:#2dd4bf;
+}
+body{ margin:0; font-family:Inter, Roboto, Arial; background:var(--bg); color:#e6eef3; }
+.container{ max-width:900px; margin:40px auto; padding:20px; }
+h1{ text-align:center; margin-bottom:20px; }
+.card{ background:var(--card); padding:20px; border-radius:12px; display:flex; gap:12px; align-items:center; }
+input{ padding:10px 12px; border-radius:8px; border:none; background:#0b1320; color:white; width:220px; }
+.buttons{ display:flex; gap:8px; }
+button{ padding:10px 14px; border-radius:8px; border:none; cursor:pointer; background:var(--accent); color:#012; font-weight:600; }
+.price{ margin-top:12px; font-size:20px; }
+.history{ margin-top:20px; }
+table{ width:100%; border-collapse:collapse; background:#071424; }
+th,td{ padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.04); text-align:left; }
+.error{ color:#ffb4b4; margin-top:8px; }
+/* Dropdown Styling */
+.dropdown-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.dropdown-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dropdown-box select {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  outline: none;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.dropdown-box select:hover {
+  border-color: #888;
+}
+
+.dropdown-box select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 4px #4CAF50;
+}
+/* Full App Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40, #3f3f6b);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  color: #fff;
+}
+
+/* Smooth Animated Gradient */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Center container clean look */
+.container {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Glassmorphism Card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+/* Glass Table */
+.history table {
+  width: 100%;
+  margin-top: 25px;
+  background: rgba(255,255,255,0.08);
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.history th, .history td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.history th {
+  background: rgba(255,255,255,0.15);
+  font-weight: bold;
+}
